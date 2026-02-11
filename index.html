@@ -10,9 +10,8 @@
 
 <body>
 
-<<header class="main-header">
-    <div class="logo-superior">
-        <img src="Asset 1@3x.png" alt="Logo Mangata & Gallo">
+<header id="main-header" class="main-header"> <div class="logo-superior">
+        <img src="Asset 1@3x.png" alt="Logo Mangata & Gallo" class="logo-img">
     </div>
     <div class="titulo-container">
         <h1>Mangata & Gallo</h1>
@@ -21,9 +20,9 @@
 </header>
 
 <nav class="barra-navegacion">
-    <a href="#HOME">HOME</a>
-    <a href="collections.html">COLLECTIONS</a>
-    <a href="#consultation">BOOK A CONSULTATION</a>
+    <a href="#main-header">HOME</a>
+    <a href="collections.html">COLLECTIONS</a> <a href="#book_form">BOOK A CONSULTATION</a> <a href="#location">LOCATION</a>
+    <a href="#book_form">BOOK A CONSULTATION</a>
     <a href="#location">LOCATION</a>
 </nav>
     
@@ -60,13 +59,13 @@ Opening Hours:
 Monday – Friday: 10:00 AM – 6:00 PM
 Saturday: 11:00 AM – 4:00 PM
 Sunday: Closed (By Appointment Only)</p>
-                <a href="#">Our Location</a>
+                <a href="https://maps.app.goo.gl/KLKk9QuyzCV3pTLV7"target="_blank">Our Location</a>
             </article>
         </section>
         <section id="menu" class="menu-section">
 
             
-       <section class="book_form">
+       <section id="book_form">
     <form action="/submit-appointment" method="post">
         <fieldset>
             <legend>Schedule Your Private Consultation</legend>
@@ -101,25 +100,28 @@ Sunday: Closed (By Appointment Only)</p>
 
 
        
-<footer>
- <div class="footer-container">
-  <section class="mini-logo"></section>
-      <img src="Asset 1@3x.png" alt="Mini Logo">
-  <div class="footer-container"></div>
-      </section>
-        <div class="footer-contact">
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Asset 1@3x.png" alt="Mangata & Gallo Logo">
+        </div>
+
+        <div class="footer-info">
             <h4>Visit Our Atelier</h4>
             <p>123 Artisan Way, Austin, TX 78701</p>
-            <p>Phone: +1 (512) 555-0123</p>
-            <p>Email: appointments@mangatagallo.com</p>
+            <p>Phone: <a href="tel:+15125550123">+1 (512) 555-0123</a></p>
+            <p>Email: <a href="mailto:appointments@mangatagallo.com">appointments@mangatagallo.com</a></p>
         </div>
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 Mangata & Gallo. Designed by Jose Maria Web Developer.</p>
+        <p>&copy; 2026 Mangata & Gallo. Designed by <strong>Jose Maria Web Developer</strong>.</p>
     </div>
-</div>
 </footer>
+
+</body>
+
+</html>
     </footer>
 
 </body>
