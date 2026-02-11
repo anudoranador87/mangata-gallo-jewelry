@@ -1,0 +1,247 @@
+html{
+    box-sizing: border-box;
+}
+:root {
+    --primary-gold: #d4af37;
+    --bg-cream: #fdf5e6;
+    --text-dark: #1a1a1a;
+    --font-titles: 'Playfair Display', serif;
+}
+
+
+.titulo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 12px; 
+    margin: 0;
+    
+  
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+          animation: fadeInTitle 2s ease-in-out;
+}
+
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #888; /
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(197, 160, 89, 0.3);
+    padding-top: 15px;
+}
+
+
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        letter-spacing: 20px; 
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 12px;
+    }
+}
+
+   
+.tarjeta-historia p {
+    text-align: justify;
+    hyphens: auto; /* Para que rompa las palabras largas con guiones y no queden huecos */
+    line-height: 1.6; /* Un poco de aire para que sea más elegante */
+    margin-top: 15px; /* Espacio con respecto a la imagen de arriba */
+}
+.tarjeta-historia {
+    display: flex;
+    flex-direction: column; /* Alinea todo en vertical */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para que resalten sobre el crema */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Un toque de sombra sutil */
+}
+
+/* Forzamos que la imagen ocupe el ancho y el párrafo se mantenga debajo */
+.tarjeta-historia img {
+    width: 100%;
+    height: 200px; /* Altura fija para que todas las tarjetas se vean iguales */
+    object-fit: cover; /* Para que la imagen no se deforme */
+    display: block;
+}
+
+    
+
+img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+   
+.logo img:hover{
+    width: 150px;
+    height: 150px;
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+body{
+    display:grid;
+     background-color: var(--bg-cream);
+    gap: 10px;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "main main main"
+                         "footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: #ffffff;
+    height: auto;
+    margin: 20px;
+    
+    display: flex;
+        
+    justify-content: space-around;
+}
+nav{
+    grid-area: nav;
+    background-color: #ffffff; /* Fondo limpio */
+    display: flex;
+    justify-content: center; /* Centra el grupo de enlaces */
+    align-items: center;
+    gap: 50px; 
+    padding: 20px 0;     
+    border-top: 1px solid #d4af37; /* Revisa que diga 'solid' */
+    border-bottom: 1px solid #d4af37;
+    position: sticky;
+    top: 0;
+
+}
+  
+nav a{
+    text-decoration: none; 
+    color: #444; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.8rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative; 
+    transition: color 0.3s ease; 
+    padding: 5px 0;
+
+}   
+a:hover{
+    color: var(--primary-gold);
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+    }
+.contenedor-cards a{
+    text-decoration: none; 
+    color: var(--primary-gold); 
+    justify-content: center;
+    font-family: 'Playfair Display', serif; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    position: relative; 
+    transition: color 0.3s ease; 
+    padding: 10px 0;
+    margin:0 100px;
+}
+.contenedor-cards a:hover{
+    color: #343333;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+main{
+    grid-area: main;
+    background-color: lightyellow;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}   
+main img{   
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    
+}   
+footer{
+    grid-area: footer;
+    background-color: lightgray;
+}   
+
+.barra-navegacion{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.contenedor-cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+#banner img{
+    width: 100%;
+    height: 50vh;
+    margin-left: 40px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+input, textarea{
+    padding: 5px;
+    margin: 10px 0;S;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #999;
+}
