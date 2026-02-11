@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root {
     --primary-gold: #d4af37;
@@ -9,29 +10,18 @@ html{
 }
 
 
-.titulo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-}
-
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem; /
+    font-size: 4rem; 
+    display: flex;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 12px; 
-    margin: 0;
-    
-  
+    margin: 0 ;
     background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    -webkit-text-fill-color: transparent;  
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
           animation: fadeInTitle 2s ease-in-out;
 }
@@ -42,8 +32,8 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
-    color: #888; /
-    text-transform: uppercase;
+    color: #888; 
+    text-transform: uppercase;  
     letter-spacing: 5px;
     margin-top: 10px;
     border-top: 1px solid rgba(197, 160, 89, 0.3);
@@ -55,35 +45,53 @@ h2 {
     from {
         opacity: 0;
         letter-spacing: 20px; 
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
-        letter-spacing: 12px;
+        letter-spacing: 12px; 
+        transform: translateY(0);
     }
 }
 
    
 .tarjeta-historia p {
     text-align: justify;
-    hyphens: auto; /* Para que rompa las palabras largas con guiones y no queden huecos */
-    line-height: 1.6; /* Un poco de aire para que sea más elegante */
-    margin-top: 15px; /* Espacio con respecto a la imagen de arriba */
+    hyphens: auto; 
+    line-height: 1.6; 
+    margin-top: 15px; 
 }
 .tarjeta-historia {
     display: flex;
-    flex-direction: column; /* Alinea todo en vertical */
+    flex-direction: column; 
     padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para que resalten sobre el crema */
+    background-color: #ffffff; 
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Un toque de sombra sutil */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
 }
 
 /* Forzamos que la imagen ocupe el ancho y el párrafo se mantenga debajo */
 .tarjeta-historia img {
     width: 100%;
-    height: 200px; /* Altura fija para que todas las tarjetas se vean iguales */
-    object-fit: cover; /* Para que la imagen no se deforme */
+    height: 200px; 
+    object-fit: cover; 
     display: block;
+}
+
+.tarjeta-historia a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.6s ease;
+}
+
+.tarjeta-historia a:hover {
+    color: var(--text-dark);
+    transform: translateX(5px); 
 }
 
     
@@ -93,45 +101,65 @@ img{
     height: 100px;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 40px;
-    margin-top: 25px;
+    margin-right: 20px;
+    
 }
 
-   
-.logo img:hover{
-    width: 150px;
-    height: 150px;
-    transform: scale(1.25);
+
+
+.logo-superior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; 
+}
+
+
+.logo-img {
+    width: 200px; 
+    height: auto;
+    margin-right: 40px;
+    filter: invert(0.9) sepia(1) saturate(20) hue-rotate(5deg) brightness(0.9) contrast(1.5);
+    filter: drop-shadow(1px 1px 1px rgba(184, 134, 11, 0.5));
+    
     transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05); 
+}
+
+header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 30px 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+
 }
 body{
     display:grid;
      background-color: var(--bg-cream);
+     margin:0 9;
     gap: 10px;
     grid-template-areas: "header header header"
                          "nav nav nav"
                          "main main main"
                          "footer footer footer";
 }
-header{
-    grid-area: header;
-    background-color: #ffffff;
-    height: auto;
-    margin: 20px;
-    
-    display: flex;
-        
-    justify-content: space-around;
-}
+
+
 nav{
     grid-area: nav;
-    background-color: #ffffff; /* Fondo limpio */
+    background-color: #ffffff; 
     display: flex;
-    justify-content: center; /* Centra el grupo de enlaces */
+    justify-content: space-around;
     align-items: center;
     gap: 50px; 
     padding: 20px 0;     
-    border-top: 1px solid #d4af37; /* Revisa que diga 'solid' */
+    border-top: 1px solid #d4af37; 
     border-bottom: 1px solid #d4af37;
     position: sticky;
     top: 0;
@@ -145,8 +173,9 @@ nav a{
     font-size: 0.8rem; 
     font-weight: 500; 
     text-transform: uppercase; 
-    letter-spacing: 2px; 
+    letter-spacing: 3px; 
     position: relative; 
+    margin: 0 40px;
     transition: color 0.3s ease; 
     padding: 5px 0;
 
@@ -203,16 +232,7 @@ footer{
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.footer-container{
-    display: flex;
-    justify-content: space-between;
 
-}
-.footer-bottom{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
 #banner{
     width: 100%;
     height: auto;
@@ -228,20 +248,130 @@ footer{
     margin-left: 40px;
 
 }
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
+
+#book_form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin: 50px auto;
+    max-width: 600px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
-input, textarea{
-    padding: 5px;
-    margin: 10px 0;S;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+
+#book_form fieldset {
+    border: none; 
+    padding: 0;
 }
-::placeholder{
-    color: #999;
+
+#book_form legend {
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 10px;
+    float: left; 
+    width: 100%;
+}
+#book_form p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+
+#book_form label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-gold);
+    margin-bottom: 5px;
+}
+
+
+#book_form input, 
+#book_form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1.5px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#book_form input:focus, 
+#book_form select:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px); 
+}
+
+
+#book_form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #bf953f, #aa771c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 10px;
+}
+
+
+#book_form button:hover {
+    background: linear-gradient(135deg, #aa771c, #bf953f);
+    box-shadow: 0 5px 15px rgba(187, 149, 63, 0.4);
+    letter-spacing: 4px; 
+}
+
+#book_form button:active {
+    transform: scale(0.98);
+}
+
+
+.main-footer {
+    grid-area: footer;
+    background-color: #111; 
+    color: #fff;
+    padding: 60px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 40px 20px;
+    border-top: 1px solid var(--primary-gold); 
+}
+
+.footer-logo, .footer-info {
+    flex: 1; 
+}
+
+.footer-info {
+    text-align: right; 
+}
+
+.footer-logo img {
+    width: 180px; 
+    height: auto;
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg); 
 }
