@@ -70,7 +70,7 @@ h2 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
 }
 
-/* Forzamos que la imagen ocupe el ancho y el párrafo se mantenga debajo */
+
 .tarjeta-historia img {
     width: 100%;
     height: 200px; 
@@ -222,11 +222,7 @@ footer{
     background-color: lightgray;
 }   
 
-.barra-navegacion{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
+
 .contenedor-cards{
     display: grid;
     gap: 20px;
@@ -374,4 +370,78 @@ footer{
     width: 180px; 
     height: auto;
     filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg); 
+}
+
+
+/* --- for mobile phone  ( 480px) --- */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem; 
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    header {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .logo-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 120px;
+    }
+
+    nav {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 0.75rem;
+    }
+
+    .contenedor-cards {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    #book_form {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+}
+
+/* --- Adapted to Tablets ( 481px to 1024px) --- */
+@media (min-width: 481px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 8px;
+    }
+
+    .contenedor-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    nav a {
+        margin: 0 15px;
+        letter-spacing: 1px;
+    }
 }
