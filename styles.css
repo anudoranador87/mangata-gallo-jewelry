@@ -102,6 +102,7 @@ img{
     display: flex;
     justify-content: space-evenly;
     margin-right: 20px;
+   object-fit: contain;
     
 }
 
@@ -230,19 +231,21 @@ footer{
 }
 
 #banner{
-    width: 100%;
-    height: auto;
+   
     display: flex;
     margin: 0 0;
     justify-content: center;
     align-items: center;
+    width: 100%;      
+    height: 300px;     
+    overflow: hidden;  
    
 }
 #banner img{
-    width: 100%;
-    height: 50vh;
-    margin-left: 40px;
-
+   width: 100%;       
+    height: 100%;     
+     object-fit: cover; 
+      object-position: center;
 }
 
 #book_form {
