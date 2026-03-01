@@ -1,42 +1,91 @@
-# mangata-gallo-jewelry
-Luxury handcrafted jewelry website for Mangata &amp; Gallo. Developed with a focus on premium aesthetics, custom typography, and artisanal storytelling.(META CERTIFICATION PROJECT)
+# 💍 Mangata & Gallo - Luxury Jewelry Website
+> “Precision in code reflects the precision in a Mangata & Gallo piece.”  
+> Crafted with care, designed for elegance.
 
+---
 
+## 🌟 Project Overview
+**Mangata & Gallo** is a boutique jewelry atelier based in Austin, Texas. (imaginary) 
+This is a **Meta Certification project**, focusing on **premium aesthetics, responsive design, and interactive UI**.  
 
-This is a premium web development project for **Mangata & Gallo**, a boutique jewelry atelier based in Austin, Texas. The site is designed to reflect the brand's core values: elegance, craftsmanship, and timeless luxury.
+We translate **luxury craftsmanship** into a **polished digital experience** with careful attention to typography, layout, and micro-interactions.
 
-## ✨ Key Features
-* **Luxury Aesthetics:** Custom gold gradients and premium serif typography.
-* **Artisanal Storytelling:** Dedicated sections for the Signature Collection and the brand's history.
-* **Bespoke Consultations:** Integrated appointment booking system for private sessions.
-* **Responsive Design:** Optimized layout for a seamless experience across all devices.
+---
+
+## 🚀 Live Preview
+![Mangata & Gallo Preview](./assets/mangata-preview.gif)  
+*Hover effects, shimmer animations, and responsive design in action.*
+
+---
 
 ## 🛠️ Built With
-* **HTML5:** Semantic structure for better SEO and accessibility.
-* **CSS3:** Custom Flexbox/Grid layouts and advanced animations (`fadeInTitle`, `shimmer` effects).
-* **Google Fonts:** Utilizing *Playfair Display* for elegance and *Montserrat* for modern readability.
-* 11/02/2026. Still in progress
 
-# 🚀 Progress Log - Web Development
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+---
 
+## ✨ Key Features
 
-## 📅 Progress Log: February 26, 2026
+- 💎 **Luxury Aesthetics:** Gold gradients, premium serif typography, polished layouts.  
+- 🖋️ **Artisanal Storytelling:** Signature Collection & brand history sections.  
+- 📅 **Bespoke Consultations:** Integrated booking form for private sessions.  
+- 📱 **Responsive Design:** Optimized for desktop, tablet & mobile.  
+- ⚡ **Micro-interactions & Animations:** FadeIn, shimmer effects, subtle hover transitions.
 
-### 📝 Lead Capture Form Implementation
-Today's focus was on building and connecting the customer inquiry form for the jewelry catalog.
+---
 
-* **JavaScript Integration**: Linked the form to a `script.js` file using the `<script>` tag at the end of the body to handle submission logic.
-* **Asset Management**: Applied CSS to the form background to ensure the brand's aesthetic remains consistent without distorting the background imagery.
+## 🗓️ Development Timeline (Visual)
 
-### ⚠️ Technical Debt (Current Status)
-* **Functional Logic**: The script is successfully linked, but the data collection logic is still being refined.
-* **Issue**: I am currently debugging a logical error where the form data isn't being captured correctly on the "submit" event.
-* **Goal**: Achieve a fully functional validation system for the contact section.
+| 📅 Date | 🔑 Milestone | 📝 Description |
+|---------|-------------|----------------|
+| 11/02/2026 | 🏗️ **Project Kickoff** | Initial HTML/CSS skeleton, branding research |
+| 18/02/2026 | 🎨 **Design Drafts** | Typography, layout, and visual hierarchy exploration |
+| 26/02/2026 | 📝 **Lead Capture Form** | Connected form to `script.js`, styled background, initial validation |
+| 01/03/2026 | 📱 **Responsive Refinement** | Mobile/tablet layout, adjusted typography & grid/flex layouts |
+| 03/03/2026 | ✨ **Micro-interactions** | Hover effects, fadeIn animations, shimmer on titles |
+| 05/03/2026 | ⚡ **Debug & Polishing** | Fixing form capture logic, animation timing, and responsiveness |
 
-*“Precision in code reflects the precision in a Mangata & Gallo piece.”*
+---
+
+## 🎯 Current Status
+
+- ✅ Form logic is linked; submission capture is being refined.  
+- 🔄 Fully functional **contact form validation** is next.  
+- 🌟 Website reflects **premium brand identity**, ready for visual polish.  
+
+---
+
+## 🎨 Design Philosophy
+
+The site mirrors the **precision and craftsmanship** of Mangata & Gallo:
+
+- 🖌️ Subtle gradients and animations to reflect **luxury and elegance**  
+- 🆙 Typography hierarchy emphasizes **timeless sophistication**  
+- 🌐 Layouts are **responsive**, ensuring brand consistency across devices
+
+![Design Screenshot](./assets/mangata-layout.png)
+
+---
+
+## 💡 Key Learnings
+
+- 📐 **Responsive mastery:** Grid vs Flexbox for multi-device layouts  
+- ✨ **Interactive UI:** Micro-interactions enhance perceived quality  
+- 🖥️ **JS Form Handling:** Linked forms to JS, debugged data capture  
+- 🔍 **Attention to detail:** Translating physical craft into digital experience  
+
+---
+
+## 🖋️ Developed By
+**Jose María – Front-End Web Developer**  
+Specializing in **premium UI experiences for luxury brands**.  
+Translating **brand storytelling into interactive digital interfaces**.
+
 ---
 
 
-## 🖋️ Designed & Developed by
-**Jose María** - *Web Developer*
+
+> “Luxury is in the details — both in code and jewelry.”
