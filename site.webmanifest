@@ -1,0 +1,9 @@
+{
+  "name": "Mangata & Gallo",
+  "short_name": "Mangata",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdf5e6",
+  "theme_color": "#b8860b",
+  "icons": []
+}

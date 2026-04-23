@@ -1,132 +1,828 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangata and Gallo</title>
+    <meta name="description" content="Mangata & Gallo: Joyería fina artesanal para los momentos más preciosos de la vida. Descubre nuestra colección exclusiva y reserva una consulta privada.">
+    <meta name="keywords" content="joyería, fina, artesanal, lujo, anillos, compromiso, boda, collares, Austin, Texas, Mangata Gallo">
+    <meta property="og:title" content="Mangata & Gallo | Joyería Fina Artesanal">
+    <meta property="og:description" content="Piezas únicas, artesanía de lujo. Explora la colección, guarda favoritas y reserva consulta privada.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta name="theme-color" content="#b8860b">
+    <title>Mangata & Gallo | Joyería Fina Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="site.webmanifest">
 </head>
-
 <body>
 
     <header id="main-header" class="main-header">
-        <div class="logo-superior">
-            <img src="Asset 1@3x.png" alt="Logo Mangata & Gallo" class="logo-img">
+        <div class="logo-container">
+            <a href="#" aria-label="Inicio de Mangata & Gallo">
+                <img src="Asset 1@3x.png" alt="Logo Mangata & Gallo" class="logo-img">
+            </a>
         </div>
-        <div class="titulo-container">
+        <div class="header-titles">
             <h1>Mangata & Gallo</h1>
-            <h2>Fine Jewelry for Life’s Most Precious Milestones</h2>
+            <h2>Joyería Fina para los Momentos Más Preciosos de la Vida</h2>
         </div>
+        <button class="hamburger-menu" aria-label="Abrir menú de navegación">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
     </header>
 
-    <nav>
-        <a href="#main-header">HOME</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="#book_form">BOOK A CONSULTATION</a>
-        <a href="#location">LOCATION</a>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#main-header">INICIO</a></li>
+            <li><a href="#collections">COLECCIONES</a></li>
+            <li><a href="#lookbook">LOOKBOOK</a></li>
+            <li><a href="#reviews">RESEÑAS</a></li>
+            <li><a href="#book_form">RESERVAR CONSULTA</a></li>
+            <li><a href="#location">UBICACIÓN</a></li>
+        </ul>
     </nav>
 
-
-
     <main>
-        <section id="banner">
-            <img src="mangata.jpg" alt="Banner de Mangata & Gallo" height="350px" width="100%">
-
-        </section>
-        <section class="contenedor-cards">
-            <article class="tarjeta-historia">
-                <h2>The Signature Collection
-                    Curated Excellence for Every Milestone</h2>
-                <img src="fotosi1.jpg" alt="OUR COLLECTION of fine jewelry">
-                <p>Discover a world where timeless design meets modern craftsmanship. From ethically sourced diamond
-                    engagement rings to bespoke gold necklaces, each piece in our collection is handcrafted in our
-                    Austin atelier. Explore our latest arrivals and find the perfect symbol for your story.</p>
-                <a href="#">Read More</a>
-            </article>
-
-            <article class="tarjeta-historia">
-                <h2>Our Story: From Austin, With Love
-                    The Journey of Mangata & Gallo</h2>
-                <img src="fotosi2.jpg" alt="mariana, founder of Mangata & Gallo">
-                <p>Founded by master jeweler Mariana, Mangata & Gallo was born from a passion for diamond cutting and
-                    traditional metal forging. After years of refining her craft, Mariana returned to her roots in
-                    Austin to open an atelier that blends classical elegance with Texas soul. Today, we continue to
-                    transform raw materials into exquisite legacies, keeping the artisanal spirit alive in every weld
-                    and setting.</p>
-                <a href="#">Read More </a>
-            </article>
-
-            <article class="tarjeta-historia">
-                <h2>Visit the Atelier
-                    Experience Craftsmanship in Person</h2>
-                <img src="fotosi3.jpg" alt="handcrafted jewelry at our Austin atelier">
-                <p>We invite you to explore our collections and see our artisans at work in the heart of Austin. Whether
-                    you are looking for a custom design or a timeless gift, our doors are open to welcome you.
-                    Opening Hours:
-                    Monday – Friday: 10:00 AM – 6:00 PM
-                    Saturday: 11:00 AM – 4:00 PM
-                    Sunday: Closed (By Appointment Only)</p>
-                <a href="https://maps.app.goo.gl/vhtfv3eNyAsZ5dAs8" target="_blank">Our Location</a>
-            </article>
+        <section id="hero-banner" class="hero-banner">
+            <img src="atelier.png" alt="Atelier de Mangata & Gallo: joyería artesanal" loading="lazy" decoding="async">
+            <div class="hero-content">
+                <h3>Descubre la Elegancia Atemporal</h3>
+                <p>Cada pieza, una historia. Cada joya, una obra de arte.</p>
+                <a href="#collections" class="btn-primary">Explorar Colección</a>
+            </div>
         </section>
 
-        <section id="book_form">
-            <form action="/submit-appointment" method="post">
+        <section id="our-story" class="brand-highlights" aria-labelledby="highlights-title">
+            <div class="highlights-head">
+                <h2 id="highlights-title" class="section-title">Artesanía que se nota</h2>
+                <p class="section-subtitle">Piezas hechas con intención: diseño atemporal, materiales seleccionados y acabados impecables.</p>
+            </div>
+
+            <div class="highlights-stats" aria-label="Valores de marca">
+                <div class="stat">
+                    <p class="stat-number">Hecho a mano</p>
+                    <p class="stat-label">en atelier</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-number">Origen ético</p>
+                    <p class="stat-label">piedras seleccionadas</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-number">A medida</p>
+                    <p class="stat-label">diseño personalizado</p>
+                </div>
+            </div>
+
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <img class="zoomable" src="ring-aurora.png" alt="Detalle de anillo Aurora" loading="lazy" decoding="async">
+                    <div class="highlight-body">
+                        <h3>Signature</h3>
+                        <p>Diseños limpios que elevan el brillo y la proporción.</p>
+                        <details class="highlight-details">
+                            <summary>Ver más</summary>
+                            <p>Desde anillos de compromiso con diamantes de origen ético hasta collares de oro hechos a medida, cada pieza se trabaja para durar y emocionar.</p>
+                        </details>
+                        <a class="btn-secondary" href="#collections">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="highlight-card">
+                    <img class="zoomable" src="atelier.png" alt="Trabajo artesanal en el atelier" loading="lazy" decoding="async">
+                    <div class="highlight-body">
+                        <h3>Nuestra historia</h3>
+                        <p>Tradición joyera con alma moderna, desde Austin.</p>
+                        <details class="highlight-details">
+                            <summary>Ver más</summary>
+                            <p>Mangata &amp; Gallo nace de la pasión por el corte de diamantes y la forja de metales. Cuidamos cada soldadura y cada engaste.</p>
+                        </details>
+                        <a class="btn-secondary" href="#book_form">Reservar consulta</a>
+                    </div>
+                </article>
+
+                <article class="highlight-card">
+                    <img class="zoomable" src="atelier.png" alt="Atelier de Mangata & Gallo" loading="lazy" decoding="async">
+                    <div class="highlight-body">
+                        <h3>Visita el atelier</h3>
+                        <p>Prueba piezas, compara opciones y diseña con nosotros.</p>
+                        <details class="highlight-details">
+                            <summary>Horario</summary>
+                            <p>L–V 10:00–18:00 · S 11:00–16:00 · D cerrado (solo con cita).</p>
+                        </details>
+                        <a class="btn-secondary" href="#location">Ver ubicación</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="collections" class="collections-section" aria-labelledby="collections-title">
+            <div class="section-heading">
+                <h2 id="collections-title" class="section-title">Colecciones</h2>
+                <p class="section-subtitle">Explora piezas icónicas. Guarda tus favoritas y abre las fotos en grande.</p>
+            </div>
+
+            <div class="collections-toolbar" role="search">
+                <label class="sr-only" for="collection-search">Buscar</label>
+                <input id="collection-search" class="collection-search" type="search" placeholder="Buscar (anillo, collar, oro, diamante…)" autocomplete="off">
+
+                <label class="sr-only" for="collection-filter">Filtrar</label>
+                <select id="collection-filter" class="collection-filter">
+                    <option value="all">Todas</option>
+                    <option value="rings">Anillos</option>
+                    <option value="necklaces">Collares</option>
+                    <option value="earrings">Pendientes</option>
+                    <option value="bracelets">Pulseras</option>
+                </select>
+
+                <label class="toggle-favs" for="favorites-only">
+                    <input id="favorites-only" type="checkbox">
+                    <span>Solo favoritos</span>
+                </label>
+
+                <label class="sr-only" for="collection-sort">Ordenar</label>
+                <select id="collection-sort" class="collection-filter">
+                    <option value="relevance">Orden: recomendado</option>
+                    <option value="az">Orden: A–Z</option>
+                    <option value="za">Orden: Z–A</option>
+                </select>
+            </div>
+
+            <div class="collections-actions" aria-label="Acciones de colecciones">
+                <button class="pill-btn" id="open-cart" type="button">Mi selección <span class="pill-count" id="cart-count">0</span></button>
+                <button class="pill-btn" id="open-compare" type="button">Comparar <span class="pill-count" id="compare-count">0</span></button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <article class="product-card" data-category="rings" data-title="Anillo Aurora" data-tags="anillo diamante oro">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="ring-aurora.png" alt="Anillo Aurora: diamante de origen ético con engaste minimalista" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Anillo Aurora</h3>
+                        <p class="product-desc">Diamante de origen ético con engaste minimalista.</p>
+                        <div class="product-meta">
+                            <span class="badge">Signature</span>
+                            <span class="badge subtle">Hecho a mano</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="necklaces" data-title="Collar Luna" data-tags="collar oro perla">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="luna-collar.png" alt="Collar Luna: silueta suave y luminosa" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Collar Luna</h3>
+                        <p class="product-desc">Silueta suave y luminosa para ocasiones inolvidables.</p>
+                        <div class="product-meta">
+                            <span class="badge">Nuevo</span>
+                            <span class="badge subtle">Oro</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="earrings" data-title="Pendientes Sol" data-tags="pendientes oro brillo">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="sol-pendientes.png" alt="Pendientes Sol: brillo sutil y elegante" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pendientes Sol</h3>
+                        <p class="product-desc">Brillo sutil y elegante para diario o evento.</p>
+                        <div class="product-meta">
+                            <span class="badge">Best seller</span>
+                            <span class="badge subtle">Ligero</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bracelets" data-title="Pulsera Nébula" data-tags="pulsera oro textura">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="nebula-pulsera.png" alt="Pulsera Nébula: textura fina y acabado pulido artesanal" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pulsera Nébula</h3>
+                        <p class="product-desc">Texturas finas y acabado pulido artesanal.</p>
+                        <div class="product-meta">
+                            <span class="badge">Edición limitada</span>
+                            <span class="badge subtle">Atelier</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="rings" data-title="Anillo Eclipse" data-tags="anillo zafiro oro clásico">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="eclips-ring.png" alt="Anillo Eclipse: contraste elegante con piedra protagonista" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Anillo Eclipse</h3>
+                        <p class="product-desc">Contraste elegante con piedra protagonista y perfil clásico.</p>
+                        <div class="product-meta">
+                            <span class="badge">Clásico</span>
+                            <span class="badge subtle">Oro 18k</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="rings" data-title="Anillo Bruma" data-tags="anillo pavé diamante delicado">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&q=80" alt="Anillo Bruma, pavé sutil" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Anillo Bruma</h3>
+                        <p class="product-desc">Pavé sutil para un brillo continuo y delicado.</p>
+                        <div class="product-meta">
+                            <span class="badge">Nuevo</span>
+                            <span class="badge subtle">Pavé</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="necklaces" data-title="Collar Aura" data-tags="collar colgante oro minimal">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="aura-collar.png" alt="Collar Aura: colgante minimal para combinar en capas" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Collar Aura</h3>
+                        <p class="product-desc">Colgante minimal para combinar en capas.</p>
+                        <div class="product-meta">
+                            <span class="badge">Signature</span>
+                            <span class="badge subtle">Capas</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="necklaces" data-title="Collar Estrella" data-tags="collar diamante delicado brillante">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Collar Estrella" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Collar Estrella</h3>
+                        <p class="product-desc">Un brillo fino que ilumina el escote.</p>
+                        <div class="product-meta">
+                            <span class="badge">Best seller</span>
+                            <span class="badge subtle">Brillante</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="earrings" data-title="Pendientes Brisa" data-tags="pendientes perla clásicos">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=1200&q=80" alt="Pendientes Brisa, estilo clásico" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pendientes Brisa</h3>
+                        <p class="product-desc">Clásicos y ligeros, perfectos para regalo.</p>
+                        <div class="product-meta">
+                            <span class="badge">Clásico</span>
+                            <span class="badge subtle">Perla</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="earrings" data-title="Pendientes Halo" data-tags="pendientes aros oro modernos">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1200&q=80" alt="Pendientes Halo, aros modernos" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pendientes Halo</h3>
+                        <p class="product-desc">Aros modernos con acabado pulido y presencia sutil.</p>
+                        <div class="product-meta">
+                            <span class="badge">Nuevo</span>
+                            <span class="badge subtle">Aros</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bracelets" data-title="Pulsera Atlas" data-tags="pulsera cadena oro minimal">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=1200&q=80" alt="Pulsera Atlas, cadena fina" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pulsera Atlas</h3>
+                        <p class="product-desc">Cadena fina para combinar con relojes y anillos.</p>
+                        <div class="product-meta">
+                            <span class="badge">Signature</span>
+                            <span class="badge subtle">Minimal</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bracelets" data-title="Pulsera Río" data-tags="pulsera textura artesanal edición">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1611652022419-684e2b30b7f4?auto=format&fit=crop&w=1200&q=80" alt="Pulsera Río, textura orgánica" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pulsera Río</h3>
+                        <p class="product-desc">Textura orgánica inspirada en el movimiento del agua.</p>
+                        <div class="product-meta">
+                            <span class="badge">Atelier</span>
+                            <span class="badge subtle">Textura</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="rings" data-title="Anillo Órbita" data-tags="anillo esmeralda oro moderno">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&q=80" alt="Anillo Órbita, estilo contemporáneo" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Anillo Órbita</h3>
+                        <p class="product-desc">Volumen suave y piedra verde para un look contemporáneo.</p>
+                        <div class="product-meta">
+                            <span class="badge">Atelier</span>
+                            <span class="badge subtle">Esmeralda</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="rings" data-title="Anillo Senda" data-tags="anillo alianza boda oro satinado">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1200&q=80" alt="Anillo Senda, alianza satinada" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Anillo Senda</h3>
+                        <p class="product-desc">Alianza satinada con borde pulido para máxima comodidad.</p>
+                        <div class="product-meta">
+                            <span class="badge">Boda</span>
+                            <span class="badge subtle">Satinado</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="necklaces" data-title="Collar Bruma" data-tags="collar cadena fina oro delicado">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1200&q=80" alt="Collar Bruma, cadena fina" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Collar Bruma</h3>
+                        <p class="product-desc">Cadena fina con caída perfecta para cuello y clavícula.</p>
+                        <div class="product-meta">
+                            <span class="badge">Minimal</span>
+                            <span class="badge subtle">Cadena</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="necklaces" data-title="Collar Nacar" data-tags="collar perla oro clásico regalo">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=1200&q=80" alt="Collar Nacar, perla protagonista" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Collar Nacar</h3>
+                        <p class="product-desc">Perla protagonista con estética atemporal, ideal para regalo.</p>
+                        <div class="product-meta">
+                            <span class="badge">Clásico</span>
+                            <span class="badge subtle">Perla</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="earrings" data-title="Pendientes Aurora" data-tags="pendientes brillantes noche elegantes">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=1200&q=80" alt="Pendientes Aurora, brillo para noche" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pendientes Aurora</h3>
+                        <p class="product-desc">Brillo definido para elevar looks de noche.</p>
+                        <div class="product-meta">
+                            <span class="badge">Evento</span>
+                            <span class="badge subtle">Brillante</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="earrings" data-title="Pendientes Nébula" data-tags="pendientes largos oro textura">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1200&q=80" alt="Pendientes Nébula, largos y ligeros" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pendientes Nébula</h3>
+                        <p class="product-desc">Largos y ligeros, con textura artesanal que atrapa la luz.</p>
+                        <div class="product-meta">
+                            <span class="badge">Atelier</span>
+                            <span class="badge subtle">Largos</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bracelets" data-title="Pulsera Alba" data-tags="pulsera rígida oro pulido">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Pulsera Alba, brazalete pulido" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pulsera Alba</h3>
+                        <p class="product-desc">Brazalete pulido con silueta limpia y elegante.</p>
+                        <div class="product-meta">
+                            <span class="badge">Clásico</span>
+                            <span class="badge subtle">Pulido</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="bracelets" data-title="Pulsera Halo" data-tags="pulsera charm oro delicada">
+                    <button class="product-fav" type="button" aria-pressed="false" aria-label="Guardar en favoritos" title="Favorito">♥</button>
+                    <button class="product-image-btn" type="button" aria-label="Ver imagen ampliada">
+                        <img class="product-image zoomable" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1200&q=80" alt="Pulsera Halo, detalle charm" loading="lazy" decoding="async">
+                    </button>
+                    <div class="product-body">
+                        <h3 class="product-title">Pulsera Halo</h3>
+                        <p class="product-desc">Charm sutil para un detalle personal y discreto.</p>
+                        <div class="product-meta">
+                            <span class="badge">Nuevo</span>
+                            <span class="badge subtle">Charm</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-mini" type="button" data-action="details">Detalles</button>
+                            <button class="btn-mini solid" type="button" data-action="add">Añadir</button>
+                            <button class="btn-mini" type="button" data-action="compare">Comparar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="collections-empty" id="collections-empty" hidden>No hay resultados con ese filtro/búsqueda.</p>
+        </section>
+
+        <section id="lookbook" class="lookbook-section" aria-labelledby="lookbook-title">
+            <div class="section-heading">
+                <h2 id="lookbook-title" class="section-title">Lookbook</h2>
+                <p class="section-subtitle">Inspiración editorial para combinar piezas con intención.</p>
+            </div>
+            <div class="lookbook-grid">
+                <figure class="lookbook-item is-featured">
+                    <img class="zoomable" src="atelier.png" alt="Lookbook: artesanía en el atelier" loading="lazy" decoding="async">
+                    <figcaption>
+                        <span class="lookbook-tag">Editorial</span>
+                        <h3 class="lookbook-title">Dentro del atelier</h3>
+                        <p class="lookbook-text">Donde nacen las piezas: textura, luz y precisión.</p>
+                        <a class="lookbook-link" href="#book_form">Reservar consulta</a>
+                    </figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img class="zoomable" src="ring-aurora.png" alt="Lookbook: anillo Aurora en estilo minimal" loading="lazy" decoding="async">
+                    <figcaption>
+                        <span class="lookbook-tag">Minimal</span>
+                        <h3 class="lookbook-title">Un brillo limpio</h3>
+                        <p class="lookbook-text">Anillo Aurora: protagonista sin exceso.</p>
+                        <button class="lookbook-link" type="button" data-scroll="#collections">Ver colección</button>
+                    </figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img class="zoomable" src="luna-collar.png" alt="Lookbook: collar Luna para capas" loading="lazy" decoding="async">
+                    <figcaption>
+                        <span class="lookbook-tag">Capas</span>
+                        <h3 class="lookbook-title">Equilibrio en el escote</h3>
+                        <p class="lookbook-text">Collar Luna: suave, luminoso, versátil.</p>
+                        <button class="lookbook-link" type="button" data-scroll="#collections">Ver colección</button>
+                    </figcaption>
+                </figure>
+                <figure class="lookbook-item">
+                    <img class="zoomable" src="sol-pendientes.png" alt="Lookbook: pendientes Sol, brillo sutil" loading="lazy" decoding="async">
+                    <figcaption>
+                        <span class="lookbook-tag">Noche</span>
+                        <h3 class="lookbook-title">Brillo sutil</h3>
+                        <p class="lookbook-text">Pendientes Sol para elevar cualquier look.</p>
+                        <button class="lookbook-link" type="button" data-scroll="#collections">Ver colección</button>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section" aria-labelledby="reviews-title">
+            <div class="section-heading">
+                <h2 id="reviews-title" class="section-title">Reseñas</h2>
+                <p class="section-subtitle">Historias reales de quienes celebraron momentos únicos.</p>
+            </div>
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-header">
+                        <img class="review-avatar" src="https://i.pravatar.cc/96?img=47" alt="Foto de Lucía M." loading="lazy" decoding="async">
+                        <div class="review-meta">
+                            <p class="review-name">Lucía M.</p>
+                            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">“El anillo superó mis expectativas. El acabado es impecable y la atención fue muy cercana.”</p>
+                </article>
+                <article class="review-card">
+                    <div class="review-header">
+                        <img class="review-avatar" src="https://i.pravatar.cc/96?img=12" alt="Foto de Daniel R." loading="lazy" decoding="async">
+                        <div class="review-meta">
+                            <p class="review-name">Daniel R.</p>
+                            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">“Me ayudaron a elegir un collar para regalo y fue un acierto total. Packaging precioso.”</p>
+                </article>
+                <article class="review-card">
+                    <div class="review-header">
+                        <img class="review-avatar" src="https://i.pravatar.cc/96?img=32" alt="Foto de Sofía G." loading="lazy" decoding="async">
+                        <div class="review-meta">
+                            <p class="review-name">Sofía G.</p>
+                            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">“La consulta privada fue increíble. Diseñamos una pieza a medida tal cual la imaginaba.”</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="book_form" class="consultation-form-section">
+            <form action="/submit-appointment" method="post" class="consultation-form" id="consultation-form">
                 <fieldset>
-                    <legend>Schedule Your Private Consultation</legend>
-                    <p>Experience our master craftsmanship firsthand. Book a personalized session at our Austin atelier
-                        to find your perfect piece.</p>
+                    <legend>Agenda Tu Consulta Privada</legend>
+                    <p>Experimenta nuestra maestría artesanal de primera mano. Reserva una sesión personalizada en nuestro taller de Austin para encontrar tu pieza perfecta.</p>
 
-                    <label for="guest_name">Full Name:
-                        <input type="text" id="guest_name" name="guest_name" minlength="2" required
-                            placeholder="Your name"></label><br>
+                    <div class="form-group">
+                        <label for="guest_name">Nombre Completo:</label>
+                        <input type="text" id="guest_name" name="guest_name" minlength="2" required placeholder="Tu nombre completo">
+                    </div>
 
-                    <label for="email_guest">Email Address:
-                        <input type="email" id="email_guest" name="email_guest" required
-                            placeholder="email@example.com"></label><br>
+                    <div class="form-group">
+                        <label for="email_guest">Correo Electrónico:</label>
+                        <input type="email" id="email_guest" name="email_guest" required placeholder="correo@ejemplo.com">
+                    </div>
 
-                    <label for="guest_date">Preferred Date:
-                        <input type="date" id="guest_date" name="guest_date"></label>
+                    <div class="form-group">
+                        <label for="guest_date">Fecha Preferida:</label>
+                        <input type="date" id="guest_date" name="guest_date" required>
+                    </div>
 
-                    <label for="time_guest"><br>Preferred Time:
-                        <input type="time" id="time_guest" name="time_guest"></label><br>
+                    <div class="form-group">
+                        <label for="time_guest">Hora Preferida:</label>
+                        <input type="time" id="time_guest" name="time_guest" required>
+                    </div>
 
-                    <label for="consultation_type">Interested in: </label>
-                    <select id="consultation_type" name="consultation_type">
-                        <option value="engagement">Engagement Rings</option>
-                        <option value="wedding">Wedding Bands</option>
-                        <option value="bespoke">Bespoke Design (Custom)</option>
-                        <option value="other">Anniversary / Other</option>
-                    </select>
-                    <br><br>
+                    <div class="form-group">
+                        <label for="consultation_type">Interesado en:</label>
+                        <select id="consultation_type" name="consultation_type">
+                            <option value="engagement">Anillos de Compromiso</option>
+                            <option value="wedding">Alianzas de Boda</option>
+                            <option value="bespoke">Diseño a Medida (Personalizado)</option>
+                            <option value="other">Aniversario / Otro</option>
+                        </select>
+                    </div>
 
-                    <button type="submit">Book My Consultation</button>
+                    <button type="submit" class="btn-submit">Reservar Mi Consulta</button>
+                    <p id="consultation-message" class="consultation-message" aria-live="polite"></p>
+                    <a id="add-to-calendar" class="btn-secondary calendar-link" href="#" hidden>Añadir al calendario</a>
                 </fieldset>
             </form>
         </section>
     </main>
 
-
-
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="Asset 1@3x.png" alt="Mangata & Gallo Logo">
+                <img src="Asset 1@3x.png" alt="Logo Mangata & Gallo" loading="lazy">
             </div>
-            <div class="footer-info">
-                <h4>Visit Our Atelier</h4>
-                <p>123 Artisan Way, Austin, TX 78701</p>
-                <p>Phone: <a href="tel:+15125550123">+1 (512) 555-0123</a></p>
-                <p>Email: <a href="mailto:appointments@mangatagallo.com">appointments@mangatagallo.com</a></p>
+            <div class="footer-info" id="location">
+                <h4>Visita Nuestro Atelier</h4>
+                <address>
+                    <p>123 Artisan Way, Austin, TX 78701</p>
+                    <p>Teléfono: <a href="tel:+15125550123">+1 (512) 555-0123</a></p>
+                    <p>Email: <a href="mailto:appointments@mangatagallo.com">appointments@mangatagallo.com</a></p>
+                </address>
+                <div class="map-embed" aria-label="Mapa de ubicación">
+                    <iframe
+                        title="Mapa: Mangata & Gallo Atelier"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=Austin%20TX%2078701&output=embed">
+                    </iframe>
+                </div>
+            </div>
+            <div class="social-media">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><img src="Asset 2@3x.png" alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="Asset 3@3x.png" alt="Instagram"></a></li>
+                    <li><a href="#" aria-label="Pinterest"><img src="Asset 4@3x.png" alt="Pinterest"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Recibe lanzamientos y piezas destacadas (sin spam).</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <label class="sr-only" for="newsletter-email">Email</label>
+                    <input id="newsletter-email" type="email" placeholder="tu@email.com" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+                <p id="newsletter-message" class="newsletter-message" aria-live="polite"></p>
             </div>
         </div>
         <div class="footer-bottom">
-
-            <p>© 2026 Mangata & Gallo. Designed by <strong>Jose Maria Web Developer</strong>.</p>
+            <p>&copy; <span id="current-year"></span> Mangata & Gallo. Diseñado por <strong>Jose Maria Web Developer</strong>.</p>
         </div>
     </footer>
-<script src="script.js"></script>
-</body>
 
+    <button id="scroll-top" class="scroll-top" type="button" aria-label="Volver arriba">↑</button>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-close="true"></div>
+        <figure class="lightbox-content" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+            <button class="lightbox-close" type="button" data-close="true" aria-label="Cerrar">×</button>
+            <img id="lightbox-img" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+    </div>
+
+    <div id="product-modal" class="sheet" aria-hidden="true">
+        <div class="sheet-backdrop" data-close="true"></div>
+        <section class="sheet-panel" role="dialog" aria-modal="true" aria-label="Detalle de producto">
+            <header class="sheet-header">
+                <h3 id="product-modal-title">Detalle</h3>
+                <button class="sheet-close" type="button" data-close="true" aria-label="Cerrar">×</button>
+            </header>
+            <div class="sheet-body">
+                <img id="product-modal-img" alt="" loading="lazy" decoding="async">
+                <p id="product-modal-desc"></p>
+                <ul class="spec-list" id="product-modal-specs"></ul>
+                <div class="sheet-actions">
+                    <button class="btn-mini solid" type="button" id="product-modal-add">Añadir a mi selección</button>
+                    <button class="btn-mini" type="button" id="product-modal-compare">Comparar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="cart-drawer" class="drawer" aria-hidden="true">
+        <div class="drawer-backdrop" data-close="true"></div>
+        <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="Mi selección">
+            <header class="drawer-header">
+                <h3>Mi selección</h3>
+                <button class="drawer-close" type="button" data-close="true" aria-label="Cerrar">×</button>
+            </header>
+            <div class="drawer-body">
+                <div id="cart-items" class="drawer-items"></div>
+                <p id="cart-empty" class="drawer-empty">Aún no has añadido piezas.</p>
+            </div>
+            <footer class="drawer-footer">
+                <a id="cart-whatsapp" class="btn-primary drawer-cta" href="#" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+                <a id="cart-email" class="btn-secondary drawer-cta" href="#">Pedir por Email</a>
+                <button id="cart-clear" class="btn-mini" type="button">Vaciar</button>
+            </footer>
+        </aside>
+    </div>
+
+    <div id="compare-drawer" class="drawer" aria-hidden="true">
+        <div class="drawer-backdrop" data-close="true"></div>
+        <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="Comparador">
+            <header class="drawer-header">
+                <h3>Comparar</h3>
+                <button class="drawer-close" type="button" data-close="true" aria-label="Cerrar">×</button>
+            </header>
+            <div class="drawer-body">
+                <div id="compare-items" class="drawer-items"></div>
+                <p id="compare-empty" class="drawer-empty">Añade 2–3 piezas para comparar.</p>
+            </div>
+            <footer class="drawer-footer">
+                <button id="compare-clear" class="btn-mini" type="button">Limpiar</button>
+            </footer>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Interfaz del Asesor de Estilo con IA -->
+    <div id="ai-advisor-button" class="ai-advisor-button">
+        <img src="Asset 1@3x.png" alt="Asesor AI" class="ai-advisor-icon">
+    </div>
+
+    <div id="ai-advisor-chat-window" class="ai-advisor-chat-window">
+        <div class="chat-header">
+            <h3>Asesor de Estilo Mangata & Gallo</h3>
+            <button id="close-chat-button" class="close-chat-button">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                <p>¡Hola! Soy tu Asesor de Estilo personal de Mangata & Gallo. ¿En qué puedo ayudarte hoy?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+</body>
 </html>
